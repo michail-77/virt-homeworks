@@ -177,7 +177,6 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 vagrant@server1:~$  
   
   
-
 Vagrantfile из лекции и код ansible находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
 
 Примечание. Если Vagrant выдаёт ошибку:
