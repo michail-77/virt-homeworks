@@ -45,7 +45,7 @@
 
 - Какой, на ваш взгляд, метод работы систем конфигурации более надёжный — push или pull?
 
-  Думаю, что  push,т.к. администратор  вручную или скриптом запускаем процесс применения изменений на сервере (локально или удаленно).  
+  Думаю, что  push, т.к. администратор  вручную или скриптом запускает процесс применения изменений на сервере (локально или удаленно).  
 
 
 ## Задача 3
@@ -171,6 +171,7 @@ Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-144-generic x86_64)
 This system is built by the Bento project by Chef Software  
 More information can be found at https://github.com/chef/bento  
 Last login: Tue Apr 11 14:41:35 2023 from 10.0.2.2  
+
 vagrant@server1:~$ docker ps  
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES  
 vagrant@server1:~$  
