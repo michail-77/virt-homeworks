@@ -174,7 +174,7 @@ Last login: Tue Apr 11 14:41:35 2023 from 10.0.2.2
 
 vagrant@server1:\~$ docker ps  
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES  
-vagrant@server1:~$\  
+vagrant@server1:~$  
   
   
 
