@@ -172,7 +172,7 @@ This system is built by the Bento project by Chef Software
 More information can be found at https://github.com/chef/bento  
 Last login: Tue Apr 11 14:41:35 2023 from 10.0.2.2  
 
-```bash
+
 vagrant@server1:\~$ docker ps  
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES  
 vagrant@server1:~$  
