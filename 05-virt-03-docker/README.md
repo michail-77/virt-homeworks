@@ -131,7 +131,8 @@ Hey, Netology
     5.3 Docker  
     # cat /data/localhost  
     testfile localhost  
-
+    # exit
+    [root@localhost ~]# 
 
 ## Задача 4 (*)
 
