@@ -112,7 +112,7 @@ Hey, Netology
     sh-4.4# exit  
 
 - Добавьте ещё один файл в папку ```/data``` на хостовой машине.  
-    [root@localhost ~]# echo 'testfile localhost' >/data/localhost
+    [root@localhost ~]# echo 'testfile localhost' >/data/localhost  
     [root@localhost ~]# cat /data/localhost  
     testfile localhost  
 
