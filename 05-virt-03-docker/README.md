@@ -117,6 +117,7 @@ Hey, Netology
     testfile localhost  
 
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.  
+    ```
     [root@localhost ~]# docker exec -it debian /bin/sh  
     # ls -la /data  
     total 16  
