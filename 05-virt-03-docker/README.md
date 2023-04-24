@@ -89,6 +89,7 @@ Hey, Netology
 ## Задача 3
 
 - Запустите первый контейнер из образа ***centos*** c любым тегом в фоновом режиме, подключив папку ```/data``` из текущей рабочей директории на хостовой машине в ```/data``` контейнера.  
+    ```
     root@localhost ~]# docker ps  
     CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES  
     [root@localhost ~]# docker run -v /data:/data -dt --name centos centos  
@@ -96,6 +97,7 @@ Hey, Netology
 
 
 - Запустите второй контейнер из образа ***debian*** в фоновом режиме, подключив папку ```/data``` из текущей рабочей директории на хостовой машине в ```/data``` контейнера.  
+    ```
     [root@localhost ~]# docker run -v /data:/data -dt --name debian debian  
     2e927c9cf7f8824aeca63fa2418057b8002b8e569a2e49a1221e148a2a9124cc  
 
@@ -105,6 +107,7 @@ Hey, Netology
     93e4979359a4   centos    "/bin/bash"   2 minutes ago    Up 2 minutes              centos  
 
 - Подключитесь к первому контейнеру с помощью ```docker exec``` и создайте текстовый файл любого содержания в ```/data```.  
+    ```
     [root@localhost ~]# docker exec -it centos /bin/sh  
     sh-4.4# echo '5.3 Docker' >/data/testfile  
     sh-4.4# cat /data/testfile  
@@ -112,6 +115,7 @@ Hey, Netology
     sh-4.4# exit  
 
 - Добавьте ещё один файл в папку ```/data``` на хостовой машине.  
+    ```
     [root@localhost ~]# echo 'testfile localhost' >/data/localhost  
     [root@localhost ~]# cat /data/localhost  
     testfile localhost  
