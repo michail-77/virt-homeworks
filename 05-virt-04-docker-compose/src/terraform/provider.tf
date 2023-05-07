@@ -2,7 +2,7 @@
 terraform {
   required_providers {
     yandex = {
-      source = "yandex-cloud/yandex"
+      source = "registry.terraform.io/yandex-cloud/yandex"
     }
   }
 }
