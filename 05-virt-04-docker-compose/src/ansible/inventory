@@ -2,4 +2,4 @@
 manager
 
 [manager]
-centos ansible_host=51.250.69.228 ansible_user=admin
+centos ansible_host = 51.250.69.228 ansible_user = centos
