@@ -7,7 +7,7 @@
 
 Чтобы получить зачёт, вам нужно предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.  
   
-# Ответ:  
+### Ответ:  
 
     ![4.1](./image/4.1.PNG)  
    
@@ -22,7 +22,7 @@
 
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud.  
 
-# Ответ:  
+### Ответ:  
     ![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
     
 
@@ -33,7 +33,7 @@
 
 Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в [docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml),  должны быть в статусе "Up".  
 
-# Ответ:  
+### Ответ:  
     ![4.3](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.3.PNG)  
     
 
@@ -51,7 +51,7 @@
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
 
-# Ответ:  
+### Ответ:  
     ![4.4-1](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-1.PNG)  
       
     ![4.4-2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-2.PNG)  
