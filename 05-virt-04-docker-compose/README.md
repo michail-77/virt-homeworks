@@ -9,7 +9,9 @@
   
 ### Ответ:  
 
-    ![4.1](./image/4.1.PNG)  
+<p align="center">
+  <img width="1200" height="600" src="./image/4.1.PNG">
+</p> 
    
 
 ## Задача 2
