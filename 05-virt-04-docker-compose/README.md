@@ -9,7 +9,7 @@
   
 ### Ответ:  
 
-    ![4.1](./image/4.1.PNG)  
+    ![4.1](05-virt-04-docker-compose/image/4.1.PNG)  
    
 
 ## Задача 2
