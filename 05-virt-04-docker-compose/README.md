@@ -10,7 +10,6 @@
 ### Ответ:  
 
     ![4.1](05-virt-04-docker-compose/image/4.1.PNG)  
-   
 
 ## Задача 2
 
@@ -24,7 +23,7 @@
 
 ### Ответ:  
     ![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
-    
+  
 
 ## Задача 3
 
