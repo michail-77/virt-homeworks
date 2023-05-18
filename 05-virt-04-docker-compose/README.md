@@ -10,7 +10,7 @@
 ### Ответ:  
 
 <p align="center">
-  <img width="1200" height="600" src="./image/4.1.PNG">
+  <img width="1200" height="400" src="./image/4.1.PNG">
 </p> 
    
 
