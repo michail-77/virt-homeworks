@@ -25,8 +25,9 @@
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud.  
 
 ### Ответ:  
+<p
     ![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
-    
+</p>    
 
 ## Задача 3
 
