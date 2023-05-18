@@ -9,9 +9,9 @@
 Чтобы получить зачёт, вам нужно предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.  
   
 # Ответ:  
-```
-    ![4.1](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.1.PNG)  
-```    
+
+    ![4.1](./image/4.1.PNG)  
+   
 
 ## Задача 2
 
