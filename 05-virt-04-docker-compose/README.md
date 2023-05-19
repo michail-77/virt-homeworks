@@ -23,6 +23,7 @@
 
 ### Ответ:  
 ![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
+
  <img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG" alt="4.2"> 
 
 ## Задача 3
