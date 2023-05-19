@@ -10,7 +10,7 @@
 ### Ответ:  
 
     ![4.1](05-virt-04-docker-compose/image/4.1.PNG)  
-
+<img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.1.PNG" alt="4.1">
 ## Задача 2
 
 **2.1.** Создайте вашу первую виртуальную машину в YandexCloud с помощью web-интерфейса YandexCloud.        
@@ -22,8 +22,8 @@
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud.  
 
 ### Ответ:  
-    ![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
-  
+![4.2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG)  
+ <img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.2.PNG" alt="4.2"> 
 
 ## Задача 3
 
@@ -33,10 +33,10 @@
 Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в [docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml),  должны быть в статусе "Up".  
 
 ### Ответ: 
-Code  
 
-    ![4.3](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.3.PNG)  
-    
+
+![4.3](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.3.PNG)  
+<img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.3.PNG" alt="4.3">
 
 ## Задача 4
 
@@ -54,6 +54,6 @@ Code
 
 ### Ответ:  
     ![4.4-1](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-1.PNG)  
-      
+ <img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-1.PNG" alt="4.4-1">     
     ![4.4-2](https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-2.PNG)  
 <img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/image/4.4-2.PNG" alt="4.4-2">
