@@ -178,6 +178,22 @@ VALUES
 
 Приведите получившийся результат и объясните, что значат полученные значения.
 
+```
+test_db=# EXPLAIN SELECT * from clients where "заказ" is not null;
+                        QUERY PLAN                         
+-----------------------------------------------------------
+ Seq Scan on clients  (cost=0.00..18.10 rows=806 width=72)
+   Filter: ("заказ" IS NOT NULL)
+(2 rows)
+
+test_db=# 
+```
+Seq Scan - последовательное сканирование  
+0.00 — затраты на получение первой строки
+18.10 - затраты на получение всех строк  
+rows – отображает число записей, обработанных для получения выходных данных  
+width — средний размер одной строки в байтах.  
+
 ## Задача 6
 
 Создайте бэкап БД test_db и поместите его в volume, предназначенный для бэкапов (см. задачу 1).
@@ -190,11 +206,41 @@ VALUES
 
 Приведите список операций, который вы применяли для бэкапа данных и восстановления. 
 
----
+### Ответ:
 
-### Как cдавать задание
+root@187afc3b98f6:/# pg_dump -U postgres -W test_db > /home/backup/test_db.back
+Password: 
+root@187afc3b98f6:/# ls -la /home/backup/
+total 8
+drwxr-xr-x. 2 root root   26 Jun 15 17:45 .
+drwxr-xr-x. 1 root root   20 Jun  8 15:02 ..
+-rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back
+[root@localhost 06-db-02-sql]# docker stop pg12
+[root@localhost 06-db-02-sql]# docker run --name pg12_recovery -e POSTGRES_PASSWORD=12345 -v 06-db-02-sql_backup_postgres:/data -d postgres:12
+ea669c23e5d5c459167f4dcc3e799bcdeae2a558b4ed42c99caea4d6be8fc4d5
 
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
+docker exec -it pg12_recovery bash
 
----
+root@ea669c23e5d5:/# cd /data
+root@ea669c23e5d5:/data# ls -la
+total 8
+drwxr-xr-x. 2 root root   26 Jun 15 17:45 .
+drwxr-xr-x. 1 root root   29 Jun 16 20:38 ..
+-rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back
 
+createdb test_db -U postgres
+root@ea669c23e5d5:/data# psql -U postgres test_db < /data/test_db.back
+root@ea669c23e5d5:/data#  psql -d test_db -U postgres
+psql (12.15 (Debian 12.15-1.pgdg110+1))
+Type "help" for help.
+
+test_db=# SELECT * from clients where "заказ" is not null;
+```
+ id |       фамилия        | страна проживания | заказ 
+----+----------------------+-------------------+-------
+  1 | Иванов Иван Иванович | USA               |     3
+  2 | Петров Петр Петрович | Canada            |     4
+  3 | Иоганн Себастьян Бах | Japan             |     5
+(3 rows)
+```
+test_db=# 
