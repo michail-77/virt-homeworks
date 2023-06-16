@@ -208,33 +208,33 @@ width — средний размер одной строки в байтах.
 
 ### Ответ:
 
-root@187afc3b98f6:/# pg_dump -U postgres -W test_db > /home/backup/test_db.back
-Password: 
-root@187afc3b98f6:/# ls -la /home/backup/
-total 8
-drwxr-xr-x. 2 root root   26 Jun 15 17:45 .
-drwxr-xr-x. 1 root root   20 Jun  8 15:02 ..
--rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back
-[root@localhost 06-db-02-sql]# docker stop pg12
-[root@localhost 06-db-02-sql]# docker run --name pg12_recovery -e POSTGRES_PASSWORD=12345 -v 06-db-02-sql_backup_postgres:/data -d postgres:12
-ea669c23e5d5c459167f4dcc3e799bcdeae2a558b4ed42c99caea4d6be8fc4d5
+root@187afc3b98f6:/# pg_dump -U postgres -W test_db > /home/backup/test_db.back  
+Password:  
+root@187afc3b98f6:/# ls -la /home/backup/  
+total 8  
+drwxr-xr-x. 2 root root   26 Jun 15 17:45 .  
+drwxr-xr-x. 1 root root   20 Jun  8 15:02 ..  
+-rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back  
+[root@localhost 06-db-02-sql]# docker stop pg12  
+[root@localhost 06-db-02-sql]# docker run --name pg12_recovery -e POSTGRES_PASSWORD=12345 -v 06-db-02-sql_backup_postgres:/data -d  postgres:12  
+ea669c23e5d5c459167f4dcc3e799bcdeae2a558b4ed42c99caea4d6be8fc4d5  
 
-docker exec -it pg12_recovery bash
+docker exec -it pg12_recovery bash  
 
-root@ea669c23e5d5:/# cd /data
-root@ea669c23e5d5:/data# ls -la
-total 8
-drwxr-xr-x. 2 root root   26 Jun 15 17:45 .
-drwxr-xr-x. 1 root root   29 Jun 16 20:38 ..
--rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back
+root@ea669c23e5d5:/# cd /data  
+root@ea669c23e5d5:/data# ls -la  
+total 8  
+drwxr-xr-x. 2 root root   26 Jun 15 17:45 .  
+drwxr-xr-x. 1 root root   29 Jun 16 20:38 ..  
+-rw-r--r--. 1 root root 4292 Jun 15 17:45 test_db.back  
 
-createdb test_db -U postgres
-root@ea669c23e5d5:/data# psql -U postgres test_db < /data/test_db.back
-root@ea669c23e5d5:/data#  psql -d test_db -U postgres
-psql (12.15 (Debian 12.15-1.pgdg110+1))
-Type "help" for help.
+createdb test_db -U postgres  
+root@ea669c23e5d5:/data# psql -U postgres test_db < /data/test_db.back  
+root@ea669c23e5d5:/data#  psql -d test_db -U postgres  
+psql (12.15 (Debian 12.15-1.pgdg110+1))  
+Type "help" for help.  
 
-test_db=# SELECT * from clients where "заказ" is not null;
+test_db=# SELECT * from clients where "заказ" is not null;  
 ```
  id |       фамилия        | страна проживания | заказ 
 ----+----------------------+-------------------+-------
@@ -243,4 +243,4 @@ test_db=# SELECT * from clients where "заказ" is not null;
   3 | Иоганн Себастьян Бах | Japan             |     5
 (3 rows)
 ```
-test_db=# 
+test_db=#   
