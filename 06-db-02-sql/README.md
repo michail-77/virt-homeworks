@@ -90,7 +90,9 @@ test_db=# \l
 
 test_db=# 
 ```
-
+<img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/06-db-02-sql/image/06-02_2.1.PNG" alt="06-02_2.1">
+<img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/06-db-02-sql/image/06-02_2.2.PNG" alt="06-02_2.2">
+<img src="https://github.com/michail-77/virt-homeworks/blob/virt-11/06-db-02-sql/image/06-02_2.3.PNG" alt="06-02_2.3">
 
 SELECT grantee, table_catalog, table_name, privilege_type  
 FROM information_schema.table_privileges  
