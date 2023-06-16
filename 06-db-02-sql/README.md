@@ -6,9 +6,11 @@
 Используя Docker, поднимите инстанс PostgreSQL (версию 12) c 2 volume, 
 в который будут складываться данные БД и бэкапы.
 
+## Ответ:
 Приведите получившуюся команду или docker-compose-манифест.
+
+[root@localhost 06-db-02-sql]$ docker pull postgres:12  
 ```
-[root@localhost 06-db-02-sql]$ docker pull postgres:12
 docker-compose.yaml
 version: '3'
 services:
@@ -30,7 +32,7 @@ volumes:
  backup_volume:
 
 ```
-$ docker-compose up -d
+$ docker-compose up -d  
 $ sudo docker exec -it pg12 bash
 
 
