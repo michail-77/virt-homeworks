@@ -6,7 +6,7 @@
 Используя Docker, поднимите инстанс PostgreSQL (версию 12) c 2 volume, 
 в который будут складываться данные БД и бэкапы.
 
-## Ответ:
+### Ответ:
 Приведите получившуюся команду или docker-compose-манифест.
 
 [root@localhost 06-db-02-sql]$ docker pull postgres:12  
@@ -65,6 +65,38 @@ $ sudo docker exec -it pg12 bash
 - описание таблиц (describe);
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
 - список пользователей с правами над таблицами test_db.
+
+### Ответ:
+
+user@localhost 06-db-02-sql]$ sudo docker exec -it pg12 bash  
+root@187afc3b98f6:/# createdb test_db -U postgres  
+root@187afc3b98f6:/# psql -d test_db -U postgres  
+  psql (12.15 (Debian 12.15-1.pgdg110+1))  
+  Type "help" for help.  
+
+```
+test_db=# \l
+                                  List of databases
+    Name     |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-------------+----------+----------+------------+------------+-----------------------
+ postgres    | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ postgres_db | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+             |          |          |            |            | postgres=CTc/postgres
+ template1   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+             |          |          |            |            | postgres=CTc/postgres
+ test_db     | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+(5 rows)
+
+test_db=# 
+```
+
+
+SELECT grantee, table_catalog, table_name, privilege_type  
+FROM information_schema.table_privileges  
+WHERE table_name IN ('orders','clients');  
+
+
 
 ## Задача 3
 
