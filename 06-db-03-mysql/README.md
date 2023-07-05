@@ -59,6 +59,7 @@ mysql> select count(*) from orders where price>300;
 |        1 |
 +----------+
 1 row in set (0.00 sec)
+```
 
 ## Задача 2
 
