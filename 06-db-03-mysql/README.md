@@ -50,6 +50,7 @@ Uptime:                 42 min 34 sec
 
 Threads: 2  Questions: 35  Slow queries: 0  Opens: 140  Flush tables: 3  Open tables: 58  Queries per second avg: 0.013
 --------------  
+```
   
 ```
 mysql> select count(*) from orders where price>300;  
