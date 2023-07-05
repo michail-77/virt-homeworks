@@ -49,16 +49,16 @@ Binary data as:         Hexadecimal
 Uptime:                 42 min 34 sec
 
 Threads: 2  Questions: 35  Slow queries: 0  Opens: 140  Flush tables: 3  Open tables: 58  Queries per second avg: 0.013
---------------
-
+--------------  
+  
 ```
-mysql> SELECT COUNT(*) FROM orders WHERE price > 300;
-+----------+
-| COUNT(*) |
-+----------+
-|        1 |
-+----------+
-1 row in set (0.00 sec)
+mysql> SELECT COUNT(*) FROM orders WHERE price > 300;  
++----------+  
+| COUNT(*) |  
++----------+  
+|        1 |  
++----------+  
+1 row in set (0.00 sec)  
 
 
 ## Задача 2
