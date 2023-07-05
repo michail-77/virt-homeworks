@@ -52,14 +52,13 @@ Threads: 2  Questions: 35  Slow queries: 0  Opens: 140  Flush tables: 3  Open ta
 --------------  
   
 ```
-mysql> SELECT COUNT(*) FROM orders WHERE price > 300;  
-+----------+  
-| COUNT(*) |  
-+----------+  
-|        1 |  
-+----------+  
-1 row in set (0.00 sec)  
-
+mysql> select count(*) from orders where price>300;
++----------+
+| count(*) |
++----------+
+|        1 |
++----------+
+1 row in set (0.00 sec)
 
 ## Задача 2
 
