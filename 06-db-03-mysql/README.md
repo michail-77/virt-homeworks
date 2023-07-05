@@ -102,6 +102,37 @@ mysql> SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER = 'test';
 - на `MyISAM`,
 - на `InnoDB`.
 
+### Ответ:
+```
+mysql> SELECT table_schema,table_name,engine FROM information_schema.tables WHERE table_schema = DATABASE();
++--------------+------------+--------+
+| TABLE_SCHEMA | TABLE_NAME | ENGINE |
++--------------+------------+--------+
+| test_db      | orders     | InnoDB |
++--------------+------------+--------+
+1 row in set (0.00 sec)
+```
+```
+mysql> ALTER TABLE orders ENGINE = MyISAM;
+Query OK, 5 rows affected (0.04 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE orders ENGINE = InnoDB;
+Query OK, 5 rows affected (0.04 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> SHOW PROFILES;
++----------+------------+------------------------------------------------------------------------------------------------------+
+| Query_ID | Duration   | Query                                                                                                |
++----------+------------+------------------------------------------------------------------------------------------------------+
+|        1 | 0.00262125 | SELECT table_schema,table_name,engine FROM information_schema.tables WHERE table_schema = DATABASE() |
+|        2 | 0.04174200 | ALTER TABLE orders ENGINE = MyISAM                                                                   |
+|        3 | 0.04268600 | ALTER TABLE orders ENGINE = InnoDB                                                                   |
++----------+------------+------------------------------------------------------------------------------------------------------+
+3 rows in set, 1 warning (0.00 sec)
+```
+
+
 ## Задача 4 
 
 Изучите файл `my.cnf` в директории /etc/mysql.
