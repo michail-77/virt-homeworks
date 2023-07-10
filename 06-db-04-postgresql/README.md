@@ -169,7 +169,7 @@ CREATE TABLE orders_2 (CHECK (price >= 499)) INHERITS (orders);
 
 ### Ответ:
 ```
-pg_dump -U postgres -d test_database > /var/lib/postgresql/backup/test_database.sql
+root@048173ac4b6a:/# pg_dump -U postgres -d test_database > /var/lib/postgresql/backup/test_database.sql
 
 test_database=# CREATE unique INDEX title_un ON public.orders(title);
 ```
