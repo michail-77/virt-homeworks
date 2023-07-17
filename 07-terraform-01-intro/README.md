@@ -66,6 +66,10 @@
 
 ### Ответ:
 ```
+C:\Users\admin\Documents\GitHub\virt-homeworks\07-terraform-01-intro\distr>terraform --version
+Terraform v1.5.3
+on windows_amd64
+
 
 ```
 
