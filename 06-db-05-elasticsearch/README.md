@@ -244,8 +244,8 @@ $ curl -X PUT "localhost:9200/test?pretty" -H 'Content-Type: application/json' -
 '
 $ curl 'localhost:9200/_cat/indices?v'
 health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-green  open   .geoip_databases S1DKUc-ZQveldv2h1TUPAw   1   0         41            0     68.3mb         68.3mb
-green  open   test             z-KFN9TDRNiDeZiwiSjt3A   1   0          0            0       226b           226b
+green  open   .geoip_databases 9gx3gR0yRJ-k7oDYZqsTvg   1   0         41            0     68.3mb         68.3mb
+green  open   test             xBtObBqYTli889S4Qvf0Mg   1   0          0            0       226b           226b
 ```
 ```
 $ curl -X PUT "localhost:9200/_snapshot/netology_backup/snapshot_1?wait_for_completion=true&pretty"
@@ -287,13 +287,12 @@ green open .geoip_databases 9gx3gR0yRJ-k7oDYZqsTvg 1 0 41 0 38.6mb 38.6mb
 green open test             xBtObBqYTli889S4Qvf0Mg 1 0  0 0   226b   226b
 ```
 ```
-Для восстановления пришлось закрыть индексы
 curl -X GET 'http://localhost:9200/_cat/indices?v'
 
 health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   .geoip_databases 9gx3gR0yRJ-k7oDYZqsTvg   1   0         41            0     38.8mb         38.8mb
 green  open   test-2           QEPe5eEfS6KpD76Fl9flkA   1   0          0            0       226b           226b
-green  open   test             xBtObBqYTli889S4Qvf0Mg   1   0          0            0       226b           226b
+green  open   test             cIFjzz5mQ2O8Ng5mLlKuCQ   1   0          0            0       226b           226b
 ```
 
 
