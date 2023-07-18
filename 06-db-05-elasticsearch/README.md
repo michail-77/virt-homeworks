@@ -240,7 +240,7 @@ $ curl -X PUT "localhost:9200/test?pretty" -H 'Content-Type: application/json' -
   }
 }
 '
-$ $ curl 'localhost:9200/_cat/indices?v'
+$ curl 'localhost:9200/_cat/indices?v'
 health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   .geoip_databases S1DKUc-ZQveldv2h1TUPAw   1   0         41            0     68.3mb         68.3mb
 green  open   test             z-KFN9TDRNiDeZiwiSjt3A   1   0          0            0       226b           226b
