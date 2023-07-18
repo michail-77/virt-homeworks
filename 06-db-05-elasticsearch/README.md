@@ -62,7 +62,7 @@ EXPOSE 9200
 
 CMD ["bin/elasticsearch"]
 
-https://hub.docker.com/r/michail77/elasticsearch
+[Dockerhub](https://hub.docker.com/r/michail77/elasticsearch).
 
 {
   "name" : "netology_test",
