@@ -62,8 +62,10 @@ EXPOSE 9200
 
 CMD ["bin/elasticsearch"]
 
-Ссылка на [Dockerhub](https://hub.docker.com/r/michail77/elasticsearch)
+```
+Ссылка на [Dockerhub](https://hub.docker.com/repository/docker/michail77/elasticsearch/general)
 
+```
 {
   "name" : "netology_test",
   "cluster_name" : "netology",
