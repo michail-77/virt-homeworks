@@ -86,7 +86,14 @@ on windows_amd64
 ### Ответ:
 ```
 
+PS C:\Users\admin\Documents\GitHub\virt-homeworks\07-terraform-01-intro\distr\terraform_0.12.15_windows_amd64> terraform -v
+Terraform v1.5.3
+on windows_amd64
+PS C:\Users\admin\Documents\GitHub\virt-homeworks\07-terraform-01-intro\distr\terraform_0.12.15_windows_amd64> .\terraform_old -v
+Terraform v0.12.15
 
+Your version of Terraform is out of date! The latest version
+is 1.5.3. You can update by downloading from https://www.terraform.io/downloads.html
 ```
 
 ---
