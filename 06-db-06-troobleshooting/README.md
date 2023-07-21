@@ -92,7 +92,9 @@ InterfaceError: (InterfaceError) 2013: Lost connection to MySQL server during qu
 подкачки. В Linux 2.6 и более поздних версиях дополнительной мерой является изменение поведения ядра таким образом, 
 чтобы оно  не "перегружало" память. Хотя этот параметр не предотвратит вызов OOM killer в целом, но значительно 
 снизит вероятность и, следовательно, приведет к более надежному поведению системы.
-Добавить запись sysctl -w vm.overcommit_memory = 2 в /etc/sysctl.conf. Также можете изменить соответствующий параметр vm.overcommit_ratio.
+
+Добавить запись sysctl -w vm.overcommit_memory = 2 в /etc/sysctl.conf. 
+
 
 ```
 ---
